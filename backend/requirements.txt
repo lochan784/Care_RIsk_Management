@@ -1,0 +1,20 @@
+# FastAPI and ASGI server
+fastapi
+uvicorn[standard]
+
+# Data processing and ML
+pandas
+numpy
+scikit-learn
+joblib
+
+# API validation and serialization
+pydantic
+pydantic[email]
+
+# Optional: Additional utilities
+
+# Development and testing (optional)
+ # For testing FastAPI endpoints
+
+# Production deployment (optional)  # Alternative ASGI server for production
