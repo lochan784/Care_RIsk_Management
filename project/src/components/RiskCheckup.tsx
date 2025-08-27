@@ -41,7 +41,7 @@ const DiabetesRiskApp = () => {
   const [error, setError] = useState<string | null>(null);
 
   // API Base URL - Update this to match your backend
-  const API_BASE_URL = 'http://localhost:8000';
+  const API_BASE_URL = 'https://backend-b8h2c9hphbhgdzex.eastasia-01.azurewebsites.net';
 
   // Check API health on component mount
   useEffect(() => {
