@@ -33,10 +33,10 @@ export default function Reports({ patients }: ReportsProps) {
           <FileText className="h-6 w-6 text-blue-600 mr-3" />
           <h2 className="text-2xl font-bold text-gray-900">Health Analysis Reports</h2>
         </div>
-        <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+        {/* <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
           <Download className="h-4 w-4 mr-2" />
           Export Report
-        </button>
+        </button> */}
       </div>
 
       {/* Summary Cards */}
