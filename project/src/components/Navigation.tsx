@@ -1,11 +1,8 @@
-import React from 'react';
 import { 
-  BarChart3, 
-  Users, 
+  BarChart3,  
   FileText, 
   Activity, 
-  UtensilsCrossed, 
-  MessageSquare,
+  UtensilsCrossed,
   Home
 } from 'lucide-react';
 
@@ -20,7 +17,6 @@ const navigationItems = [
   { id: 'reports', label: 'My Reports', icon: FileText },
   { id: 'diet-plan', label: 'Diet Plan', icon: UtensilsCrossed },
   { id: 'data-analysis', label: 'Data Analysis', icon: BarChart3 },
-  { id: 'feedback', label: 'Feedback', icon: MessageSquare },
 ];
 
 export default function Navigation({ currentPage, onPageChange }: NavigationProps) {

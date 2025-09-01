@@ -5,8 +5,9 @@ import { RiskCalculator } from '../utils/riskCalculator';
 const patientNames = [
   'Sakthi Poornima', 'Arjun Dass', 'Hema Priya', 'Gokul Krishna', 'Mithali Raj',
   'Nitish Reddy', 'Ajay Kumar', 'Sagar Sankar', 'Riya johnson', 'Sujith Kumar',
-  'Sindhu Singh', 'Naveen Kumar', 'Nandhini Devi', 'Sai Kishore', 'Aishwarya Rajesh',
-  'Kalai Arasi', 'Lalith Kishore', 'Sri Kamalesh', 'Asmitha Raj', 'Prem Kumar'
+  'Sindhu Singh', 'Naveen Kumar', 'Ram Lakshmi', 'Sai Kishore', 'Aishwarya Rajesh',
+  'Kalai Arasi', 'Lalith Kishore', 'Sri Kamalesh', 'Asmitha Raj', 'Prem Kumar',
+  'Harini Devi', 'Manoj Karthik', 'Prakash Raj', 'Divya Bharathi', 'Ramesh Kumar'
 ];
 
 const doctors = [
@@ -37,7 +38,7 @@ const rawData = [
   [6,103,72,32,190,37.7,0.324,55,0],
   [1,71,48,18,76,20.4,0.323,22,0],
   [0,117,0,0,0,33.8,0.932,44,0],
-  [4,154,72,29,126,31.3,0.338,37,0],
+  [4,154,90,45,150,39.3,0.854,45,6],
   [5,147,78,0,0,33.7,0.218,65,0],
   [10,111,70,27,0,27.5,0.141,40,1],
   [7,179,95,31,0,34.2,0.164,60,0],
@@ -45,17 +46,24 @@ const rawData = [
   [5,96,74,18,67,33.6,0.997,43,0],
   [2,88,58,26,16,28.4,0.766,22,0],
   [1,125,50,40,167,33.3,0.962,28,1],
-  [3,84,72,32,0,37.2,0.267,28,0],
+  [0,60,69,27,0,25,0.2,22,0],
   [5,86,68,28,71,30.2,0.364,24,0],
   [4,183,0,0,0,28.4,0.212,36,1],
-  [0,140,65,26,130,42.6,0.431,24,1]
+  [0,140,65,26,130,42.6,0.431,24,1],
+   [0, 85, 65, 20, 70, 22.5, 0.25, 25, 0],  // Healthy young
+  [1, 90, 70, 22, 80, 23.1, 0.30, 28, 0],  // Normal adult
+
+  // --- Tier 5: Severe cases ---
+  [8, 250, 110, 45, 400, 42.5, 1.20, 55, 1], // Severe diabetic, obese
+  [6, 310, 100, 50, 500, 45.2, 1.50, 60, 1], // Very high glucose
+  [10, 280, 105, 40, 350, 40.8, 1.10, 65, 1]
 ];
 
 function generateContactInfo(index: number) {
   return {
-    phone: `(+91) ${String(Math.floor(Math.random() * 900) + 89999)}-${String(Math.floor(Math.random() * 9000) + 1000)}`,
+    phone: `(+91) ${String(Math.floor(Math.random() * 900) + 89999)}-${String(Math.floor(Math.random() * 9000) + 10000)}`,
     email: `${patientNames[index].toLowerCase().replace(' ', '.')}@email.com`,
-    address: `${Math.floor(Math.random() * 99) + 1} ${['Main Road', 'Nehru St', 'Kutchery Road', 'K.K.Nagar', 'J.N.Salai'][Math.floor(Math.random() * 5)]}, Chennai, ST 600002`
+    address: `${Math.floor(Math.random() * 99) + 1}, ${['Main Road', 'Nehru St', 'Kutchery Road', 'K.K.Nagar', 'J.N.Salai'][Math.floor(Math.random() * 5)]}, Chennai, ST 600002`
   };
 }
 

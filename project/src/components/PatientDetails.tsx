@@ -151,7 +151,7 @@ export default function PatientDetails({ patient, onBack }: PatientDetailsProps)
         <div className="space-y-6">
           {/* ROI Section */}
           <div className="bg-white rounded-lg shadow-sm border p-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Return on Investment</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Return of Investment</h3>
             
             <div className="space-y-4">
               <div className="flex items-center justify-between">

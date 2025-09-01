@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import LoginPage from './components/LoginPage';
 import Layout from './components/Layout';
 import Navigation from './components/Navigation';
@@ -8,7 +8,6 @@ import RiskCheckup from './components/RiskCheckup';
 import Reports from './components/Reports';
 import DietPlan from './components/DietPlan';
 import DataAnalysis from './components/DataAnalysis';
-import Feedback from './components/Feedback';
 import { samplePatients } from './data/sampleData';
 import type { User, Patient } from './types';
 
@@ -62,8 +61,6 @@ function App() {
         return <DietPlan />;
       case 'data-analysis':
         return <DataAnalysis patients={samplePatients} />;
-      case 'feedback':
-        return <Feedback />;
       default:
         return <Dashboard patients={samplePatients} onPatientSelect={handlePatientSelect} />;
     }

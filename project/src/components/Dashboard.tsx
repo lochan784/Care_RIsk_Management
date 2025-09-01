@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { Search, Users, Filter, Calendar, Stethoscope } from 'lucide-react';
 import type { Patient } from '../types';
 

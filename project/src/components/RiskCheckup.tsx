@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Calculator, Activity, AlertCircle, Heart, TrendingUp, DollarSign, Clock, RefreshCw } from 'lucide-react';
 
 // Types
@@ -351,13 +351,13 @@ const DiabetesRiskApp = () => {
               <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-lg p-6 text-center">
                 <div className="flex items-center justify-center mb-2">
                   <DollarSign className="w-6 h-6 text-green-600 mr-2" />
-                  <h4 className="text-lg font-semibold text-gray-700">Intervention ROI</h4>
+                  <h4 className="text-lg font-semibold text-gray-700">ROI</h4>
                 </div>
                 <p className="text-3xl font-bold text-green-600 mb-2">
                   {results.roi_percent.toFixed(0)}%
                 </p>
                 <p className="text-sm text-gray-600">
-                  Net Profit: ${results.net_profit.toLocaleString()}
+                  Profit: ${results.net_profit.toLocaleString()}
                 </p>
               </div>
             </div>

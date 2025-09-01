@@ -9,7 +9,7 @@ interface LayoutProps {
   title?: string;
 }
 
-export default function Layout({ children, currentUser, onLogout, title = "Care Management & Co." }: LayoutProps) {
+export default function Layout({ children, currentUser, onLogout, title = "Member Risk Stratification" }: LayoutProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white shadow-sm border-b border-gray-200">
